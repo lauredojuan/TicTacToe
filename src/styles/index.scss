@@ -12,7 +12,20 @@
 
 */
 
-.square{
+.cell{
     height: 100px;
     width: 100px;
+    margin: 2px;
+    line-height: 100px;
+    text-align: center;
+    font-size: 50px;
+    border: 2px solid grey;
+    border-radius: 5px;
 }
+
+.row{
+    justify-content: center;
+    // border: 1px solid grey;
+}
+
+
