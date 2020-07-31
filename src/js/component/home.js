@@ -6,6 +6,7 @@ export class Home extends React.Component {
 		this.state = {
 			player: null,
 			square: null,
+			message: "Tic-Tac-Toe",
 			nextPlayerInput: "X",
 			allCells: ["", "", "", "", "", "", "", "", ""],
 			// player1: [0, 0, 0, 0, 0, 0, 0, 0, 0], //X
@@ -65,6 +66,10 @@ export class Home extends React.Component {
 	render() {
 		return (
 			<div className="container mt-5">
+				<div className="row text-success">
+					<h1>{this.state.message}</h1>
+				</div>
+
 				<div className="row">
 					<div className="cell" onClick={() => this.handleClick(0)}>
 						{this.state.allCells[0]}
