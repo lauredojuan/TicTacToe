@@ -4,8 +4,6 @@ export class Home extends React.Component {
 	constructor() {
 		super();
 		this.state = {
-			player: null,
-			square: null,
 			message: "Tic-Tac-Toe",
 			nextPlayerInput: "X",
 			allCells: ["", "", "", "", "", "", "", "", ""],
@@ -109,6 +107,9 @@ export class Home extends React.Component {
 					<div className="cell" onClick={() => this.handleClick(8)}>
 						{this.state.allCells[8]}
 					</div>
+				</div>
+				<div className="row">
+					<h3>"X is playing now"</h3>
 				</div>
 				<div className="row">
 					<button type="button" className="btn btn-primary mt-3">
