@@ -36,11 +36,16 @@ export class Home extends React.Component {
 					newArray.push(allCellsCurrent[winningPosition]);
 
 					if (newArray.toString() === "X,X,X") {
-						console.log("X is the winner!!");
+						// console.log("X is the winner!!");
+						this.setState({ message: "X is the winner!!" });
+						return;
 					} else if (newArray.toString() === "O,O,O") {
-						console.log("O is the winner!!");
+						// console.log("O is the winner!!");
+						this.setState({ message: "O is the winner!!" });
+						return;
 					} else {
-						console.log("Keep Playing");
+						// console.log("Keep Playing");
+						this.setState({ message: "Keep Playing" });
 					}
 				}
 			}
